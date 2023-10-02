@@ -43,9 +43,6 @@ resource "aws_route53_record" "mongodb" {
   records = [aws_instance.mongodb.private_ip]
 }
 
-
-..
-
 resource "aws_instance" "catalogue" {
   ami           = data.aws_ami.centos.image_id
   instance_type = "t3.small"
