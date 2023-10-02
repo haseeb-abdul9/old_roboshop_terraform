@@ -54,7 +54,7 @@ resource "aws_instance" "catalogue" {
 
 resource "aws_route53_record" "catalogue" {
   zone_id = "Z07904683H2P61IIEYSB9"
-  name    = "frontend-dev.haseebdevops.online"
+  name    = "catalogue-dev.haseebdevops.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.catalogue.private_ip]
