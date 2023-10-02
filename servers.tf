@@ -14,7 +14,7 @@ resource "aws_instance" "frontend" {
   }
 }
 
-resource "aws_route53_record" "frontend-dev.haseebdevops.online" {
+resource "aws_route53_record" "frontend" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "frontend-dev.haseebdevops.online"
   type    = "A"
@@ -35,7 +35,7 @@ resource "aws_instance" "mongodb" {
   }
 }
 
-resource "aws_route53_record" "mongodb-dev.haseebdevops.online" {
+resource "aws_route53_record" "mongodb" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "mongodb-dev.haseebdevops.online"
   type    = "A"
@@ -55,7 +55,7 @@ resource "aws_instance" "catalogue" {
   }
 }
 
-resource "aws_route53_record" "catalogue-dev.haseebdevops.online" {
+resource "aws_route53_record" "catalogue" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "frontend-dev.haseebdevops.online"
   type    = "A"
@@ -73,7 +73,7 @@ resource "aws_instance" "redis" {
   }
 }
 
-resource "aws_route53_record" "redis-dev.haseebdevops.online" {
+resource "aws_route53_record" "redis" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "redis-dev.haseebdevops.online"
   type    = "A"
@@ -91,7 +91,7 @@ resource "aws_instance" "user" {
   }
 }
 
-resource "aws_route53_record" "user-dev.haseebdevops.online" {
+resource "aws_route53_record" "user" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "user-dev.haseebdevops.online"
   type    = "A"
@@ -109,7 +109,7 @@ resource "aws_instance" "cart" {
   }
 }
 
-resource "aws_route53_record" "cart-dev.haseebdevops.online" {
+resource "aws_route53_record" "cart" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "cart-dev.haseebdevops.online"
   type    = "A"
@@ -127,7 +127,7 @@ resource "aws_instance" "mysql" {
   }
 }
 
-resource "aws_route53_record" "mysql-dev.haseebdevops.online" {
+resource "aws_route53_record" "mysql" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "mysql-dev.haseebdevops.online"
   type    = "A"
@@ -144,7 +144,7 @@ resource "aws_instance" "shipping" {
   }
 }
 
-resource "aws_route53_record" "shipping-dev.haseebdevops.online" {
+resource "aws_route53_record" "shipping" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "shipping-dev.haseebdevops.online"
   type    = "A"
@@ -162,7 +162,7 @@ resource "aws_instance" "rabbitmq" {
   }
 }
 
-resource "aws_route53_record" "rabbitmq-dev.haseebdevops.online" {
+resource "aws_route53_record" "rabbitmq" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "rabbitmq-dev.haseebdevops.online"
   type    = "A"
@@ -180,7 +180,7 @@ resource "aws_instance" "payment" {
   }
 }
 
-resource "aws_route53_record" "payment-dev.haseebdevops.online" {
+resource "aws_route53_record" "payment" {
   zone_id = Z07904683H2P61IIEYSB9
   name    = "payment-dev.haseebdevops.online"
   type    = "A"
