@@ -1,7 +1,7 @@
-variable "variable_name" {
+variable "sample_string" {
   default = "hello world"
 }
 
-output "variable_name" {
-  value = "var.variable_name"
+output "sample_string" {
+  value = "var.sample_string"
 }
