@@ -44,6 +44,8 @@ resource "aws_route53_record" "mongodb-dev.haseebdevops.online" {
 }
 
 
+..
+
 resource "aws_instance" "catalogue" {
   ami           = data.aws_ami.centos.image_id
   instance_type = "t3.small"
