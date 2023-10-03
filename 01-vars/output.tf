@@ -10,3 +10,7 @@ output "sample_list" {
   value = var.sample_list[2]
 }
 
+output "sample_map" {
+  value = "var.sample_map["number1"]
+}
+

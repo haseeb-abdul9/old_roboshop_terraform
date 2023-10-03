@@ -19,4 +19,12 @@ variable "sample_list" {
   ]
 }
 
+variable "sample_map" {
+  default = {
+    number1 = 100
+    string1 = "hello"
+    string2 = 123
+    bolean = true
+  }
+}
 
