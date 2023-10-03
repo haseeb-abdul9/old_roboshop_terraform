@@ -2,6 +2,20 @@ variable "sample_string" {
   default = "hello world"
 }
 
-output "sample_string" {
-  value = var.sample_string
+variable "sample_number" {
+  default = 100
 }
+
+variable "sample_boolean" {
+  default = true
+}
+
+variable "sample_list" {
+  default = [
+  100
+  hello
+  true
+  123]
+}
+
+
