@@ -28,3 +28,5 @@ variable "sample_map" {
   }
 }
 
+variable "env" {}
+

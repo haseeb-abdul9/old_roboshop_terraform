@@ -14,3 +14,6 @@ output "sample_map" {
   value = var.sample_map["number1"]
 }
 
+output "env" {
+  value = "var.env"
+}
