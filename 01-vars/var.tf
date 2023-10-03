@@ -30,3 +30,4 @@ variable "sample_map" {
 
 variable "env" {}
 
+variable "auto_numb1" {}

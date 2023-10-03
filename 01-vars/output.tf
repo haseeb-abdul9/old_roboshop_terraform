@@ -17,3 +17,7 @@ output "sample_map" {
 output "env" {
   value = "var.env"
 }
+
+output "auto_numb1" {
+  value = "var.auto_numb1"
+}
