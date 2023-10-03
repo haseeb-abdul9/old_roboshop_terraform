@@ -11,6 +11,6 @@ output "sample_list" {
 }
 
 output "sample_map" {
-  value = "var.sample_map["number1"]
+  value = var.sample_map["number1"]
 }
 
