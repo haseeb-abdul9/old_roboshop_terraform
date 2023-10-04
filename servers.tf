@@ -20,7 +20,6 @@ resource "aws_instance" "frontend" {
     Name = "frontend"
   }
 }
-/*
 
 resource "aws_route53_record" "frontend" {
   zone_id = "Z07904683H2P61IIEYSB9"
@@ -192,4 +191,4 @@ resource "aws_route53_record" "payment" {
   ttl     = 30
   records = [aws_instance.payment.private_ip]
 }
-*/
+
