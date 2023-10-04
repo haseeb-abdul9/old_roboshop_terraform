@@ -12,6 +12,22 @@ variable "instance_type" {
   default = "t3.small"
 }
 
+variable "components" {
+  default = [ "frontend", "mongodb", "catalogue" ]
+}
+
+resource "aws_instance" "instance" {
+  count         = length(var.components))
+  ami           = data.aws_ami.centos.image_id
+  instance_type = var.instance_type
+  vpc_security_group_ids = [data.aws_security_group.allow-all.id]
+
+  tags = {
+    Name = var.components[count.index]
+  }
+}
+
+/*
 resource "aws_instance" "frontend" {
   ami           = data.aws_ami.centos.image_id
   instance_type = var.instance_type
@@ -20,8 +36,9 @@ resource "aws_instance" "frontend" {
     Name = "frontend"
   }
 }
+*/
 
-resource "aws_route53_record" "frontend" {
+/*resource "aws_route53_record" "frontend" {
   zone_id = "Z07904683H2P61IIEYSB9"
   name    = "frontend-dev.haseebdevops.online"
   type    = "A"
@@ -190,5 +207,5 @@ resource "aws_route53_record" "payment" {
   type    = "A"
   ttl     = 30
   records = [aws_instance.payment.private_ip]
-}
+}*/
 
